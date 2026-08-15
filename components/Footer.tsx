@@ -13,12 +13,15 @@ export default function Footer() {
             Daisy Auto Sales
           </div>
           <p className="text-sm text-white/70 leading-relaxed">
-            Quality used cars and honest repair work, under one roof, since 2011.
+            Quality used cars and honest repair work, under one roof, since
+            2011.
           </p>
         </div>
 
         <div className="text-sm">
-          <h3 className="font-display font-medium mb-3 text-white/90">Visit Us</h3>
+          <h3 className="font-display font-medium mb-3 text-white/90">
+            Visit Us
+          </h3>
           <div className="flex items-start gap-2 text-white/70 mb-2">
             <MapPin size={16} className="mt-0.5 shrink-0" />
             <span>4521 NW 39th Expy, Oklahoma City, OK 73112</span>
@@ -46,12 +49,25 @@ export default function Footer() {
         </div>
 
         <div className="text-sm">
-          <h3 className="font-display font-medium mb-3 text-white/90">Explore</h3>
+          <h3 className="font-display font-medium mb-3 text-white/90">
+            Explore
+          </h3>
           <div className="flex flex-col gap-2 text-white/70">
-            <Link href="/inventory" className="hover:text-white transition-colors">Inventory</Link>
-            <Link href="/services" className="hover:text-white transition-colors">Services</Link>
-            <Link href="/about" className="hover:text-white transition-colors">About</Link>
-            <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
+            <Link
+              href="/services"
+              className="hover:text-white transition-colors"
+            >
+              Services
+            </Link>
+            <Link href="/#about" className="hover:text-white transition-colors">
+              About
+            </Link>
+            <Link
+              href="/contact"
+              className="hover:text-white transition-colors"
+            >
+              Contact
+            </Link>
           </div>
         </div>
       </div>
