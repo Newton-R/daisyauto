@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F7F8FA;
+  color: #12161C;
+}
+
+::selection {
+  background-color: #2F6FED;
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid #2F6FED;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Window-sticker signature element: perforated top edge like a Monroney label stub */
+.sticker-perf {
+  background-image: radial-gradient(circle, #DDE1E6 1.5px, transparent 1.6px);
+  background-size: 10px 10px;
+  background-position: 0 center;
+  background-repeat: repeat-x;
+  height: 3px;
+}
+
+.sticker-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 6px 0;
+  border-bottom: 1px dashed #DDE1E6;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+
+.sticker-row:last-child {
+  border-bottom: none;
+}
