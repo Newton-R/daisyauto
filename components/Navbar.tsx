@@ -24,9 +24,11 @@ export default function Navbar() {
           href="/"
           className="flex items-center gap-2 font-display font-semibold text-lg tracking-tight text-ink"
         >
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-navy text-white text-sm font-bold font-mono">
-            D
-          </span>
+          <img
+            src="/logo.png"
+            alt="Daisy Auto Sales"
+            className="h-12 w-12 rounded-full object-cover"
+          />
           Daisy Auto Sales
         </Link>
 

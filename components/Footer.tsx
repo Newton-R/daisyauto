@@ -7,9 +7,11 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-14 grid gap-10 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-2 font-display font-semibold text-lg mb-3">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white text-navy text-sm font-bold font-mono">
-              D
-            </span>
+            <img
+              src="/logo.png"
+              alt="Daisy Auto Sales"
+              className="h-12 w-12 rounded-full object-cover"
+            />
             Daisy Auto Sales
           </div>
           <p className="text-sm text-white/70 leading-relaxed">
