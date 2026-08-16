@@ -30,7 +30,9 @@ export default function WindowSticker({ vehicle }: { vehicle: Vehicle }) {
         <div className="border-t border-hairline pt-1">
           <div className="sticker-row">
             <span className="text-steel">Mileage</span>
-            <span className="text-ink">{vehicle.mileage.toLocaleString()} mi</span>
+            <span className="text-ink">
+              {vehicle.mileage?.toLocaleString()} mi
+            </span>
           </div>
           <div className="sticker-row">
             <span className="text-steel">Transmission</span>
