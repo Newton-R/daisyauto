@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { Menu, X, Phone } from "lucide-react";
 
 const links = [
   { href: "/", label: "Home" },
+  { href: "/inventory", label: "Inventory" },
   { href: "/services", label: "Services" },
   { href: "/#about", label: "About" },
   { href: "/contact", label: "Contact" },
@@ -13,6 +15,7 @@ const links = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 bg-surface/95 backdrop-blur border-b border-hairline">
@@ -28,15 +31,20 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 font-body text-sm text-steel">
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="hover:text-ink transition-colors"
-            >
-              {l.label}
-            </Link>
-          ))}
+          {links.map((l) => {
+            const base = l.href.split("#")[0] || "/";
+            const isActive =
+              base === "/" ? pathname === "/" : pathname?.startsWith(base);
+            return (
+              <Link
+                key={l.href}
+                href={l.href}
+                className={`hover:text-ink transition-colors ${isActive ? "text-ink font-semibold" : ""}`}
+              >
+                {l.label}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
@@ -60,16 +68,21 @@ export default function Navbar() {
 
       {open && (
         <nav className="md:hidden border-t border-hairline bg-surface px-6 py-4 flex flex-col gap-4 font-body text-sm">
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              onClick={() => setOpen(false)}
-              className="text-ink"
-            >
-              {l.label}
-            </Link>
-          ))}
+          {links.map((l) => {
+            const base = l.href.split("#")[0] || "/";
+            const isActive =
+              base === "/" ? pathname === "/" : pathname?.startsWith(base);
+            return (
+              <Link
+                key={l.href}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className={`text-ink ${isActive ? "font-semibold" : ""}`}
+              >
+                {l.label}
+              </Link>
+            );
+          })}
           <a
             href="tel:+14055551234"
             className="flex items-center gap-2 font-mono text-ink"

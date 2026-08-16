@@ -10,6 +10,8 @@ import {
 } from "lucide-react";
 import StatBlock from "@/components/StatBlock";
 import { stats, services } from "@/lib/data";
+import { vehicles } from "@/lib/data";
+import VehicleCard from "@/components/VehicleCard";
 
 const testimonials = [
   {
@@ -40,7 +42,7 @@ export default function Home() {
           <div className="grid md:grid-cols-[1.15fr_0.85fr] gap-12 items-center">
             <div>
               <p className="font-mono text-xs uppercase tracking-widest text-white/70 mb-4">
-                Oklahoma City &middot; Est. 2011
+                United States, Columbia &middot; Est. 2011
               </p>
               <h1 className="font-display text-4xl md:text-5xl font-semibold leading-[1.08] text-white mb-5">
                 Honest service. Real people. A shop you can trust.
@@ -125,6 +127,23 @@ export default function Home() {
               </div>
             </div> */}
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-12 fade-section">
+        <div className="mb-6">
+          <p className="font-mono text-xs uppercase tracking-[0.18em] text-signal mb-2">
+            Featured inventory
+          </p>
+          <h2 className="font-display text-3xl font-semibold text-ink">
+            Sample Vehicles
+          </h2>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {vehicles.slice(0, 3).map((v) => (
+            <VehicleCard key={v.id} vehicle={v} />
+          ))}
         </div>
       </section>
 

@@ -3,7 +3,8 @@ import ContactForm from "./ContactForm";
 
 export const metadata = {
   title: "Contact | Daisy Auto Sales",
-  description: "Get in touch with Daisy Auto Sales for vehicle questions, service appointments, or a visit to the lot.",
+  description:
+    "Get in touch with Daisy Auto Sales for vehicle questions, service appointments, or a visit to the lot.",
 };
 
 export default function ContactPage() {
@@ -18,8 +19,8 @@ export default function ContactPage() {
             Come by, call, or send a note
           </h1>
           <p className="text-steel max-w-xl">
-            Questions about a vehicle, need to book a service slot, or just
-            want to swing by the lot — here's how to reach us.
+            Questions about a vehicle, need to book a service slot, or just want
+            to swing by the lot — here's how to reach us.
           </p>
         </div>
       </section>
@@ -31,7 +32,9 @@ export default function ContactPage() {
               <MapPin size={17} className="text-signal" />
               <h2 className="font-display font-medium">Address</h2>
             </div>
-            <p className="text-steel text-sm">4521 NW 39th Expy, Oklahoma City, OK 73112</p>
+            <p className="text-steel text-sm">
+              616 Santa Fe Pike, Columbia, TN 38401, United States
+            </p>
           </div>
 
           <div>
@@ -39,7 +42,10 @@ export default function ContactPage() {
               <Phone size={17} className="text-signal" />
               <h2 className="font-display font-medium">Phone</h2>
             </div>
-            <a href="tel:+14055551234" className="text-steel text-sm font-mono hover:text-navy">
+            <a
+              href="tel:+14055551234"
+              className="text-steel text-sm font-mono hover:text-navy"
+            >
               (405) 555-1234
             </a>
           </div>
@@ -49,8 +55,11 @@ export default function ContactPage() {
               <Mail size={17} className="text-signal" />
               <h2 className="font-display font-medium">Email</h2>
             </div>
-            <a href="mailto:hello@daisyautosales.com" className="text-steel text-sm hover:text-navy">
-              hello@daisyautosales.com
+            <a
+              href="mailto:daisyautosales86@gmail.com"
+              className="text-steel text-sm hover:text-navy"
+            >
+              daisyautosales86@gmail.com
             </a>
           </div>
 
@@ -61,7 +70,9 @@ export default function ContactPage() {
             </div>
             <div className="text-steel text-sm font-mono space-y-0.5">
               <div>Mon–Fri&nbsp;&nbsp;8:00 AM – 6:00 PM</div>
-              <div>Sat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:00 AM – 4:00 PM</div>
+              <div>
+                Sat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:00 AM – 4:00 PM
+              </div>
               <div>Sun&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closed</div>
             </div>
           </div>

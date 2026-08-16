@@ -1,9 +1,10 @@
-import WindowSticker from "@/components/WindowSticker";
+import VehicleCard from "@/components/VehicleCard";
 import { vehicles } from "@/lib/data";
 
 export const metadata = {
   title: "Inventory | Daisy Auto Sales",
-  description: "Browse hand-inspected used vehicles currently on the Daisy Auto Sales lot.",
+  description:
+    "Browse hand-inspected used vehicles currently on the Daisy Auto Sales lot.",
 };
 
 export default function InventoryPage() {
@@ -18,8 +19,8 @@ export default function InventoryPage() {
             Current Inventory
           </h1>
           <p className="text-steel max-w-xl">
-            Every car below has already been through our own service bay.
-            Prices are what's on the tag — no hidden dealer fees tacked on later.
+            Every car below has already been through our own service bay. Prices
+            are what's on the tag — no hidden dealer fees tacked on later.
           </p>
         </div>
       </section>
@@ -27,7 +28,7 @@ export default function InventoryPage() {
       <section className="mx-auto max-w-6xl px-6 py-14">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {vehicles.map((v) => (
-            <WindowSticker key={v.id} vehicle={v} />
+            <VehicleCard key={v.id} vehicle={v} />
           ))}
         </div>
 
@@ -36,8 +37,8 @@ export default function InventoryPage() {
             Don't see what you're after?
           </h2>
           <p className="text-steel text-sm mb-5 max-w-md mx-auto">
-            New vehicles come in every week. Tell us what you're looking for
-            and we'll reach out when it lands on the lot.
+            New vehicles come in every week. Tell us what you're looking for and
+            we'll reach out when it lands on the lot.
           </p>
           <a
             href="/contact"

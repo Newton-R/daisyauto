@@ -24,7 +24,7 @@ export default function Footer() {
           </h3>
           <div className="flex items-start gap-2 text-white/70 mb-2">
             <MapPin size={16} className="mt-0.5 shrink-0" />
-            <span>4521 NW 39th Expy, Oklahoma City, OK 73112</span>
+            <span>616 Santa Fe Pike, Columbia, TN 38401, United States</span>
           </div>
           <div className="flex items-center gap-2 text-white/70 mb-2">
             <Phone size={16} className="shrink-0" />
@@ -32,7 +32,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-2 text-white/70">
             <Mail size={16} className="shrink-0" />
-            <span>hello@daisyautosales.com</span>
+            <span>daisyautosales86@gmail.com</span>
           </div>
         </div>
 
