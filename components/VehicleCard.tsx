@@ -8,7 +8,7 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
   const [open, setOpen] = useState(false);
   const images = [...vehicle.images.exterior, ...vehicle.images.interior];
 
-  const waNumber = "14055551234"; // update as needed
+  const waNumber = "9315842778"; // update as needed
   const message = encodeURIComponent(
     `Hello, I'm interested in Stock ${vehicle.stock} - ${vehicle.year} ${vehicle.make} ${vehicle.model}. Is it still available?`,
   );
