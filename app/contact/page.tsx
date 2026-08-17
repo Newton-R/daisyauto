@@ -43,10 +43,10 @@ export default function ContactPage() {
               <h2 className="font-display font-medium">Phone</h2>
             </div>
             <a
-              href="tel:+14055551234"
+              href="tel:+9315842778"
               className="text-steel text-sm font-mono hover:text-navy"
             >
-              (405) 555-1234
+              (931) 584-2778
             </a>
           </div>
 
@@ -59,7 +59,7 @@ export default function ContactPage() {
               href="mailto:daisyautosales86@gmail.com"
               className="text-steel text-sm hover:text-navy"
             >
-              daisyautosales86@gmail.com
+              daisyautosale@gmail.com
             </a>
           </div>
 

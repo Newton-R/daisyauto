@@ -51,11 +51,11 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="tel:+14055551234"
+            href="tel:+9315842778"
             className="flex items-center gap-2 font-mono text-sm text-ink"
           >
             <Phone size={15} strokeWidth={2} />
-            (405) 555-1234
+            (931) 584-2778
           </a>
         </div>
 
@@ -86,10 +86,10 @@ export default function Navbar() {
             );
           })}
           <a
-            href="tel:+14055551234"
+            href="tel:+9315842778"
             className="flex items-center gap-2 font-mono text-ink"
           >
-            <Phone size={15} /> (405) 555-1234
+            <Phone size={15} /> (931) 584-2778
           </a>
         </nav>
       )}
